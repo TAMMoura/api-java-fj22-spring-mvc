@@ -119,6 +119,14 @@
         </dependency>
 
     </dependencies>
+    
+    <developers>
+    	<developer>
+    		<name>Thiago Moura</name>
+    		<email>thiago_moura@hotmail.com.br</email>
+    	</developer>
+    </developers>
+    
     <build>
         <finalName>ingresso</finalName>
         <plugins>
