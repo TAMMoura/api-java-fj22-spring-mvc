@@ -1,6 +1,8 @@
 package br.com.caelum.ingresso.controller;
 
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,7 +53,7 @@ public class SessaoController {
 		if (result.hasErrors()) return form(form.getSalaId(), form);
 		
 		Sessao sessao  = form.toSessao(salaDao, filmeDao);
-		List<Sessao> sessoesDaSala = sessaoDao.buscaSessoesDaSala(sessoesDaSala);
+		List<Sessao> sessoesDaSala = sessaoDao.buscaSessoesDaSala(sessao.getSala());
 		
 		GerenciadorDeSessao gerenciador = new GerenciadorDeSessao(sessoesDaSala);
 		if (gerenciador.cabe(sessao)){
