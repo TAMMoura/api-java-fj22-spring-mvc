@@ -24,4 +24,12 @@ public class CarrinhoForm {
 			return new Ingresso(sessao, tipoDeIngresso, lugar);
 		}).collect(Collectors.toList());
 	}
+
+	public List<Ingresso> getIngressos() {
+		return ingressos;
+	}
+
+	public void setIngressos(List<Ingresso> ingressos) {
+		this.ingressos = ingressos;
+	}
 }

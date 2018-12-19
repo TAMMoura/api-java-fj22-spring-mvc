@@ -18,7 +18,7 @@
 	<jpa:repositories base-package="br.com.caelum.ingresso" />
 
 	<context:component-scan base-package="br.com.caelum.ingresso" />
-	<mvc:annotation-driven />
+	<mvc:annotation-driven conversion-service="conversionService" />
 	<mvc:default-servlet-handler/>
 
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -26,6 +26,13 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 
+	<bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+		<property name="converters">
+			<set merge="true">
+				<bean class="br.com.caelum.ingresso.converter.YearMonthConverter"/>
+			</set>
+		</property>
+	</bean>
 	<bean id="mysqlDS" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="username" value="root"/>
 		<property name="password" value=""/>
