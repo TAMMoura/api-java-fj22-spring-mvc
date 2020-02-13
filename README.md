@@ -1,3 +1,1 @@
-# fj22-ingressos
-Meu nome é Thiago
-testando
+Trabalho desenvolvido ao longo do curso FJ-22 da Caelum.
