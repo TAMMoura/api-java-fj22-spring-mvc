@@ -17,9 +17,6 @@ import javax.persistence.OneToMany;
 
 import org.hibernate.validator.constraints.NotBlank;
 
-/**
- * Created by nando on 03/03/17.
- */
 @Entity
 public class Sala {
 

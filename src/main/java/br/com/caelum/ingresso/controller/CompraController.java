@@ -17,8 +17,6 @@ import br.com.caelum.ingresso.model.Carrinho;
 import br.com.caelum.ingresso.model.Cartao;
 import br.com.caelum.ingresso.model.form.CarrinhoForm;
 
-
-
 @Controller
 public class CompraController {
 	

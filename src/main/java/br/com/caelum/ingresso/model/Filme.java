@@ -8,9 +8,6 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.Duration;
 
-/**
- * Created by nando on 03/03/17.
- */
 @Entity
 public class Filme {
 

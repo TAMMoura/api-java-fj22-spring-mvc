@@ -23,9 +23,6 @@ import br.com.caelum.ingresso.model.Filme;
 import br.com.caelum.ingresso.model.Sessao;
 import br.com.caelum.ingresso.rest.OmdbClient;
 
-/**
- * Created by nando on 03/03/17.
- */
 @Controller
 public class FilmeController {
 

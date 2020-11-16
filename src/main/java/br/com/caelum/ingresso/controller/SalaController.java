@@ -15,9 +15,6 @@ import javax.validation.Valid;
 
 import java.util.Optional;
 
-/**
- * Created by nando on 03/03/17.
- */
 @Controller
 public class SalaController {
 	

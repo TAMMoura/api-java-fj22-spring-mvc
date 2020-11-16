@@ -7,9 +7,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
-/**
- * Created by nando on 03/03/17.
- */
 @Entity
 public class Lugar {
 

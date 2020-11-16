@@ -1,7 +1,5 @@
 package br.com.caelum.ingresso.rest;
 
-
-
 import java.util.Optional;
 
 import org.springframework.stereotype.Component;
